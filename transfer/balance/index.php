@@ -18,8 +18,8 @@ if ($balance != 'Error') {
         [
             //'cleos wallet create --to-console --name gcstaking',
             'cleos wallet open --name gcstaking',
-            'cleos wallet unlock --name gcstaking --password PW5KURzmtFheRSqsXRiQEyCjSANfdP5DVDvjxH9f6eJni9Myg4Spd',
-            //'cleos wallet import --name gcstaking --private-key PVT_K1_2PDKc91LSvb4tFuqeKsEmKzCPDF7qT8XieK6xzJseWhFhzMMBJ',
+            'cleos wallet unlock --name gcstaking --password /* ТУТ ПАРОЛЬ ДЛЯ АНЛОНКА*/',
+            //'cleos wallet import --name gcstaking --private-key /* ТУТ ПРИВАТНЫЙ АКТИВНЫЙ КЛЮЧ*/',
             'cleos -u https://wax.greymass.com/ transfer gcmoneystake '.$wallet.' "'. $balance .' WAX" -p gcmoneystake@active'
         ],
         $debug
